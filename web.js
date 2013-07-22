@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var index = fs.readFileSync('index.html');
+var index = fs.readFileSync('index.html').buf.toString('utf8');
 
 
 
